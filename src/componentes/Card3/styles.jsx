@@ -10,7 +10,7 @@ export const CardContainer= styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: black;
 `
 
 export const ImagemCard = styled.img`
@@ -22,6 +22,7 @@ export const TextCard = styled.p`
     font-weight: 200;
     margin-top: 5px;
     text-align: center;
+    color: black;
 `
 export const TituloCard = styled.h3`
     margin-top: 2.5vh;

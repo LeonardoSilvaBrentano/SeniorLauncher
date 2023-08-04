@@ -2,6 +2,7 @@ import { useState } from "react";
 import {StyledGlobal,  CorFundo} from "./styledGlobal";
 import Home from "./pagina/Home/Home";
 import Detalhes from "./pagina/Detalhes/Detalhes";
+import Clock from "./componentes/Clock/clock";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <CorFundo>
+      <Clock/>
         <StyledGlobal />
         {trocarDePagina === 0  ? (
           <Home 
