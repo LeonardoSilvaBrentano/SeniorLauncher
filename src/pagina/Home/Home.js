@@ -10,13 +10,13 @@ import { SectionCard } from "./styles"
 
 function Home(props){
 
-    return(
+    return( // nav bar comentada, bombolonis iam aqui
         <>
         <Header
         pagina={props.pagina}
         
         />
-            <Nav/>
+            {/* <Nav/> */} 
             <SectionCard>
                 <Card/>
                 <Card2/>

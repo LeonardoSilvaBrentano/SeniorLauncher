@@ -3,6 +3,7 @@ import {StyledGlobal,  CorFundo} from "./styledGlobal";
 import Home from "./pagina/Home/Home";
 import Detalhes from "./pagina/Detalhes/Detalhes";
 import Clock from "./componentes/Clock/clock";
+import MyCustomDiv from "./componentes/MyCustomDiv/MyCustomDiv";
 
 
 function App() {

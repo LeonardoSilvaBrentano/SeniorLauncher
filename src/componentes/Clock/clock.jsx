@@ -6,10 +6,8 @@ export const clock = styled.div`
     width: 33vw;
     height: 23.2vh;
     padding: 1.2vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
 `
-

@@ -13,13 +13,39 @@ const Clock = () => {
   }, []);
 
   const formatTime = (date) => {
-    return date.toLocaleTimeString();
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const timeString = `${hours}:${minutes}`;
+
+    let greeting;
+    if (hours >= 6 && hours < 12) {
+      greeting = 'Bom dia⠀';
+    } else if (hours >= 12 && hours < 18) {
+      greeting = 'Boa tarde⠀';
+    } else {
+      greeting = 'Boa noite⠀';
+    }
+
+    return `${greeting}, são ${timeString}`;
+  };
+
+  // Estilo para a hora do relógio (vermelho)
+  const clockStyle = {
+    color: 'red',
+    fontSize: '2rem',
+    fontWeight: 'bold',
+  };
+
+  // Estilo para o container que contém os elementos h1 e p
+  const containerStyle = {
+    display: 'flex',
+    alignItems: 'center',
   };
 
   return (
-    <div>
-      <h1>Relógio</h1>
-      <p>{formatTime(time)}</p>
+    <div style={containerStyle}>
+      <h1 style={{ color: 'black' }}>{formatTime(time).split(',')[0]}</h1>
+      <span style={clockStyle}>{formatTime(time).split(',')[1]}</span>
     </div>
   );
 };
